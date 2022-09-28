@@ -50,7 +50,7 @@ public class PopupPresenter : _BasePresenter
             Managers.Audio.PlayUIClick();
             Managers.Grid.ClearBoard();
             Managers.Game.isGameActive = false;
-            Managers.Game.SetState(typeof(GamePlayState));
+            StatePresenter.shared.stateInGame();
             Managers.UI.inGameUI.gameOverPopUp.SetActive(false);
         }).AddTo(this);
         home.OnClickAsObservable().Subscribe(key  =>
@@ -58,7 +58,7 @@ public class PopupPresenter : _BasePresenter
             Managers.Grid.ClearBoard();
             Managers.Audio.PlayUIClick();
             Managers.UI.panel.SetActive(false);
-            Managers.Game.SetState(typeof(MenuState));
+            StatePresenter.shared.stateMenu();
             gameOverPop.SetActive(false);
         }).AddTo(this);
     }

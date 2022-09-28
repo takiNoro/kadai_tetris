@@ -19,7 +19,7 @@ public class RestartButton : MonoBehaviour {
         Managers.Audio.PlayUIClick();
         Managers.Grid.ClearBoard();
         Managers.Game.isGameActive = false;
-        Managers.Game.SetState(typeof(GamePlayState));
+        StatePresenter.shared.stateInGame();
         Managers.UI.inGameUI.gameOverPopUp.SetActive(false);
     }
 }

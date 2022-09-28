@@ -29,7 +29,7 @@ public class GameOverPopUp : MonoBehaviour {
         Managers.Grid.ClearBoard();
         Managers.Audio.PlayUIClick();
         Managers.UI.panel.SetActive(false);
-        Managers.Game.SetState(typeof(MenuState));
+        StatePresenter.shared.stateMenu();
         gameObject.SetActive(false);
     }
 }

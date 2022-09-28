@@ -82,6 +82,7 @@
      <Compile Include="Assets/Tetris Template/Scripts/Managers/UIManager.cs" />
      <Compile Include="Assets/Tetris Template/Scripts/UI/MainMenu.cs" />
      <Compile Include="Assets/Tetris Template/Scripts/UI/Buttons/GameBackButton.cs" />
+     <Compile Include="Assets/NewBehaviourScript.cs" />
      <None Include="Assets/Tetris Template/Plugins/3rd Party/DOTween/DOTween50.xml" />
      <None Include="Assets/Tetris Template/Plugins/3rd Party/DOTween/DOTween43.xml" />
      <None Include="Assets/Tetris Template/Plugins/3rd Party/DOTween/readme.txt" />

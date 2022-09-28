@@ -33,7 +33,7 @@ public class TetrisShape : MonoBehaviour
         // Default position not valid? Then it's game over
         if (!Managers.Grid.IsValidGridPosition(this.transform))
         {
-            Managers.Game.SetState(typeof(GameOverState));
+            StatePresenter.shared.stateGameOver();
             Destroy(this.gameObject);
         }
     }

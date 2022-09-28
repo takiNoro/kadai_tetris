@@ -17,6 +17,6 @@ public class GameBackButton : MonoBehaviour {
 	public void OnClickBackButton()
 	{
         Managers.Audio.PlayUIClick();
-        Managers.Game.SetState(typeof(MenuState));
+        StatePresenter.shared.stateMenu();
     }
 }

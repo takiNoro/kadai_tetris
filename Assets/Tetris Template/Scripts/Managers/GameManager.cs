@@ -34,13 +34,13 @@ public class GameManager : MonoBehaviour
 	{
 		if (currentState != null)
 		{
-			currentState.OnDeactivate();
+			// currentState.OnDeactivate();
 		}
 
-		currentState = GetComponentInChildren(newStateType) as _StatesBase;
+		// currentState = GetComponentInChildren(newStateType) as _StatesBase;
 		if (currentState != null)
 		{
-			currentState.OnActivate();
+			// currentState.OnActivate();
 		}
 	}
 
@@ -48,14 +48,14 @@ public class GameManager : MonoBehaviour
 	{
 		if (currentState != null)
 		{
-			currentState.OnUpdate();
+			// currentState.OnUpdate();
 		}
 	}
 
 	void Start()
 	{
-		StatePresenter.shared.stateMenu();
-		SetState(typeof(MenuState));
+		// StatePresenter.shared.stateMenu();
+		// SetState(typeof(MenuState));
 	}
 
 

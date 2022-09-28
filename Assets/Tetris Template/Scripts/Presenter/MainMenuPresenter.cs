@@ -26,7 +26,7 @@ public class MainMenuPresenter : _BasePresenter
         play.OnClickAsObservable().Subscribe(key =>
         {
             Managers.Audio.PlayUIClick();
-            Managers.Game.SetState(typeof(GamePlayState));
+            // Managers.Game.SetState(typeof(GamePlayState));
             StatePresenter.shared.stateInGame();
         }).AddTo(this);
 
